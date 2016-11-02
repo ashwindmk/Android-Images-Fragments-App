@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/app_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        card_view:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/app_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:minHeight="120dp" />
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:layout_below="@id/app_image"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/call_to_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@id/app_image"
+                android:layout_marginTop="11dp"
+                android:text="Install"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:textColor="#222222"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/app_logo"
+                android:layout_toLeftOf="@id/call_to_action"
+                android:layout_below="@id/app_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_below="@id/title"
+                android:layout_toRightOf="@id/app_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/call_to_action"
+                android:layout_alignLeft="@id/title"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
